@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login/Register</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- formulario de inicio de sesion -->
+         <div class="form-box login">
+            <form action="#">
+                <h1>Inicia Sesión</h1>
+                <!-- nombre de usuario -->
+                <div class="input-box">
+                    <input type="text" placeholder="Nombre de usuario" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <!-- contraseña -->
+                <div class="input-box">
+                    <input type="password" placeholder="Contraseña" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+               <!-- recuperacion -->
+                <div class="forgot-link">
+                    <a href="#">¿Olvidaste la contraseña?</a>
+                </div>
+                <button type="submit" class="btn">Inicia sesión</button>
+                <p>O inicia sesión mediante: </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-google"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </form>
+         </div>
+
+        <!-- Formulario de registro -->
+        <div class="form-box register">
+                <form action="#">
+                    <h1> Regístrate </h1>
+                    <!-- nombre de usuario -->
+                    <div class="input-box">
+                        <input type="text" placeholder="Nombre de usuario" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <!-- correo -->
+                    <div class="input-box">
+                        <input type="email" placeholder="Correo de registtro" required>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <!-- contraseña -->
+                    <div class="input-box">
+                        <input type="password" placeholder="Contraseña" required>
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+
+                    <button type="submit" class="btn">Registrarse</button>
+                    <p>O regístrate mediante: </p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-google"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </form>
+        </div>
+
+        <!-- toggle box -->
+         <div class="toggle-box">
+             <!-- toggle box left  -->
+             <div class="toggle-panel toggle-left">
+                <h1>¡Hola, bienvenido!</h1>
+                <p>¿No tienenes una cuenta?</p>
+                <button class="btn register-btn">Crear cuenta</button>
+             </div>
+
+             <!-- toggle box right  -->
+             <div class="toggle-panel toggle-right">
+                <h1>¡Bienvenido de vuelta!</h1>
+                <p>¿Ya tienes una cuenta?</p>
+                <button class="btn login-btn">Iniciar Sesión</button>
+             </div>
+         </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
